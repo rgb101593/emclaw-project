@@ -1,0 +1,19 @@
+{
+  "aliases": [
+    {
+      "canonical_ref": "slack-user-ref-6c4f5753a0f0b1bf",
+      "connector": "microsoft365",
+      "evidence": {
+        "phase8f_latest_status": "/path/to/emclaw/state-redacted/latest-status/app-connection-rebuild-phase8f-freeze-review-status.json",
+        "phase8g_latest_status": "/path/to/emclaw/state-redacted/latest-status/app-connection-rebuild-phase8g-no-network-alias-plan-status.json",
+        "phase8h_latest_status": "/path/to/emclaw/state-redacted/latest-status/app-connection-rebuild-phase8h-resolver-source-inspection-status.json"
+      },
+      "reason": "probable_same_admin_identity_alias_mismatch_after_phase8e_phase8f_phase8g_phase8h",
+      "source_ref": "slack-user-ref-858fcc4b50971788"
+    }
+  ],
+  "generated_at_utc": "20260523T232657Z",
+  "purpose": "Canonicalize redacted Slack user refs for app connection connector lookup without copying or moving token caches.",
+  "secret_status": "redacted_refs_only_no_raw_slack_ids_no_tokens",
+  "version": 1
+}

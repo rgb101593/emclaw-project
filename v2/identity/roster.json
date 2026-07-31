@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "updated_utc": "2026-05-26T10:47:43Z",
+  "users": [
+    {
+      "display_style": "technical",
+      "role": "admin",
+      "slack_user_hash_short": "6ccce40673e4e780",
+      "slack_user_sha256": "6ccce40673e4e780e18c37132b910b948f12424de43999b154af76be5fb9883c",
+      "source": "phase_2_local_operator_input_raw_id_not_stored",
+      "status": "active",
+      "user_ref": "admin"
+    },
+    {
+      "created_utc": "2026-05-26T08:35:25Z",
+      "display_style": "member",
+      "role": "member",
+      "slack_user_hash_short": "db6b1d5cccad3cbf",
+      "slack_user_sha256": "db6b1d5cccad3cbfe015ed58fe20fde221ab4e20c8cd2ae9de58bb1dc2e693a0",
+      "source": "option_a_manual_slack_member_id_operator_approved",
+      "status": "active",
+      "updated_utc": "2026-05-26T08:35:25Z",
+      "user_ref": "slack-user-ref-db6b1d5cccad3cbf"
+    },
+    {
+      "created_utc": "2026-05-26T10:47:43Z",
+      "display_style": "member",
+      "role": "member",
+      "slack_user_hash_short": "8d4e38d9a1cf7e80",
+      "slack_user_sha256": "8d4e38d9a1cf7e80f156abf2fe8775f7fe7fe89107cb82fd887ce6d346d99dde",
+      "source": "emclaw_onboard_user_terminal_tool",
+      "status": "active",
+      "updated_utc": "2026-05-26T10:47:43Z",
+      "user_ref": "slack-user-ref-8d4e38d9a1cf7e80"
+    }
+  ]
+}

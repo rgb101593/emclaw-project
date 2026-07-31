@@ -1,0 +1,16 @@
+export type Role = "admin" | "member" | string;
+export type RosterUser = { user_ref: string; role: Role; status: string; display_style?: string; slack_user_sha256?: string; slack_user_hash_short?: string };
+export type WorkflowSpec = Record<string, unknown> & { workflow_id?: unknown; name?: unknown; enabled?: unknown; trigger?: unknown };
+export type CalendarQueryWindow = "today" | "tomorrow" | "this_afternoon" | "next_24_hours" | "yesterday" | "last_7_days" | "this_week" | "last_week" | "explicit_range";
+export type CalendarQuestionType = "day_brief" | "important_meetings" | "next_meeting" | "schedule_summary";
+export type CalendarMetadataEvent = Record<string, unknown>;
+export type TeamAvailabilityIntent = "team_free_busy" | "find_mutual_time" | "only_my_events" | "shared_events" | "classify_event";
+export type TeamScheduleTarget = { user_ref: string; schedule: string; schedule_hash: string };
+export type EmailQueryWindow = "today" | "yesterday" | "since_yesterday" | "last_24_hours" | "last_48_hours" | "last_7_days" | "last_30_days" | "this_week" | "last_week" | "explicit_range";
+export type EmailQuestionType = "morning_brief" | "attention_digest" | "recent_unread" | "today_digest" | "since_yesterday";
+export type EmailMetadataMessage = Record<string, unknown>;
+export type EmailQueryResolvedWindow = { window: EmailQueryWindow; start: string; end: string; date_text?: string; timezone: string; resolution: string };
+export type EmailQueryFilters = { senderOrDomain?: string; subjectContains?: string; keyword?: string; normalized_terms: string[]; alias_terms: string[]; has_filters: boolean };
+export type EmailFolderScope = "inbox" | "mailbox_basic";
+export type Caller = { user_ref: string; role: Role; status: string };
+export type ToolResult = Record<string, unknown>;

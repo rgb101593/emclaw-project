@@ -1,0 +1,41 @@
+# EMClaw local runtime/private state
+.DS_Store
+.openclaw/
+state-redacted/
+logs/
+backups/
+reports/
+handoff/*.zip
+
+# IOC runtime state and generated evidence
+v2/backups/
+v2/quarantine/
+v2/reports/
+v2/state/
+v2/state-redacted/
+v2/workflow-runs/
+v2/workflows/
+v2/previews/
+
+# Build/runtime caches
+node_modules/
+dist/
+npm-cache/
+npm-home/
+command-home/
+help-home/
+sandbox/
+*.log
+*.tmp
+*.bak
+*.old
+*.orig
+*.rej
+*~
+
+# Private sister tree must never be mirrored
+../emclaw-private/
+
+# Large generated index + derived doc bundles (regenerable; kept on disk, not versioned)
+docs/**/file_index.md
+docs/**/*.zip

@@ -1,0 +1,152 @@
+{
+  "id": "emclaw-m365-connector",
+  "name": "EMClaw Microsoft 365 Connector",
+  "description": "Deterministic Microsoft 365 connector and IOC workflow wrapper tools for EMClaw IOC 1.0.",
+  "version": "0.1.0",
+  "configSchema": {
+    "type": "object",
+    "properties": {},
+    "additionalProperties": false
+  },
+  "activation": {
+    "onStartup": true
+  },
+  "contracts": {
+    "tools": [
+      "m365_status",
+      "create_my_workflow",
+      "list_my_workflows",
+      "run_my_workflow",
+      "pause_my_workflow",
+      "resume_my_workflow",
+      "terminate_my_workflow",
+      "my_workflow_status",
+      "my_email_alert_quota",
+      "m365_calendar_query",
+      "m365_email_query",
+      "m365_team_availability",
+      "show_my_preferences",
+      "set_my_preference",
+      "forget_my_preference",
+      "suggest_my_preference",
+      "admin_workflow_create_for_member",
+      "admin_workflow_update_for_member",
+      "admin_workflow_pause_for_member",
+      "admin_workflow_resume_for_member",
+      "admin_workflow_terminate_for_member",
+      "admin_workflow_inspect_for_member",
+      "admin_email_alert_quota_get",
+      "admin_email_alert_quota_set",
+      "create_workflow",
+      "list_all_automations",
+      "admin_workflow_inventory",
+      "pause_automation",
+      "resume_automation",
+      "terminate_automation",
+      "inspect_automation",
+      "approve_pending_action",
+      "m365_health_all_connected_accounts"
+    ]
+  },
+  "toolMetadata": {
+    "m365_status": {
+      "optional": true
+    },
+    "create_my_workflow": {
+      "optional": true
+    },
+    "list_my_workflows": {
+      "optional": true
+    },
+    "run_my_workflow": {
+      "optional": true
+    },
+    "pause_my_workflow": {
+      "optional": true
+    },
+    "resume_my_workflow": {
+      "optional": true
+    },
+    "terminate_my_workflow": {
+      "optional": true
+    },
+    "my_workflow_status": {
+      "optional": true
+    },
+    "my_email_alert_quota": {
+      "optional": true
+    },
+    "m365_calendar_query": {
+      "optional": true
+    },
+    "m365_email_query": {
+      "optional": true
+    },
+    "m365_team_availability": {
+      "optional": true
+    },
+    "show_my_preferences": {
+      "optional": true
+    },
+    "set_my_preference": {
+      "optional": true
+    },
+    "forget_my_preference": {
+      "optional": true
+    },
+    "suggest_my_preference": {
+      "optional": true
+    },
+    "admin_workflow_create_for_member": {
+      "optional": true
+    },
+    "admin_workflow_update_for_member": {
+      "optional": true
+    },
+    "admin_workflow_pause_for_member": {
+      "optional": true
+    },
+    "admin_workflow_resume_for_member": {
+      "optional": true
+    },
+    "admin_workflow_terminate_for_member": {
+      "optional": true
+    },
+    "admin_workflow_inspect_for_member": {
+      "optional": true
+    },
+    "admin_email_alert_quota_get": {
+      "optional": true
+    },
+    "admin_email_alert_quota_set": {
+      "optional": true
+    },
+    "create_workflow": {
+      "optional": true
+    },
+    "list_all_automations": {
+      "optional": true
+    },
+    "admin_workflow_inventory": {
+      "optional": true
+    },
+    "pause_automation": {
+      "optional": true
+    },
+    "resume_automation": {
+      "optional": true
+    },
+    "terminate_automation": {
+      "optional": true
+    },
+    "inspect_automation": {
+      "optional": true
+    },
+    "approve_pending_action": {
+      "optional": true
+    },
+    "m365_health_all_connected_accounts": {
+      "optional": true
+    }
+  }
+}
