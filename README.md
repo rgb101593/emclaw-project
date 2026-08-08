@@ -1,9 +1,16 @@
 # EMClaw
 
+[![CI](https://github.com/rgb101593/emclaw-project/actions/workflows/ci.yml/badge.svg)](https://github.com/rgb101593/emclaw-project/actions/workflows/ci.yml)
+[![Gitleaks](https://github.com/rgb101593/emclaw-project/actions/workflows/gitleaks.yml/badge.svg)](https://github.com/rgb101593/emclaw-project/actions/workflows/gitleaks.yml)
+
 EMClaw is a Slack-based work assistant for Microsoft 365. It combines a local
 language model with deterministic identity, authorization, and output checks.
 The model handles conversation; ordinary code decides which user is calling,
 which data may be read, and whether a response is safe to send.
+
+I designed and built the connector, policy controls, local-model integration,
+tests, and deployment safeguards. The main implementation is TypeScript, with a
+small dependency-free Python walkthrough for the security model.
 
 > **Sanitized public snapshot:** Credentials, private runtime state,
 > organization-specific configuration, and live data are excluded. The demo and
@@ -48,6 +55,12 @@ npm ci
 npm run build
 npm test
 npm audit --omit=dev
+```
+
+For the complete connector check:
+
+```bash
+npm run verify
 ```
 
 ## Repository layout

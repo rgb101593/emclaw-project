@@ -1,4 +1,4 @@
-# EMClaw — developer entry points.
+# EMClaw developer entry points.
 # The security demo needs only Python 3.9+ (no external services).
 # The test/typecheck targets build the Microsoft 365 connector plugin.
 
@@ -7,7 +7,7 @@ CONNECTOR := v2/plugins/emclaw-m365-connector
 .PHONY: help demo test typecheck install clean
 
 help:
-	@echo "EMClaw — available targets:"
+	@echo "EMClaw available targets:"
 	@echo "  make demo       Run the security-model walkthrough (Python stdlib only)"
 	@echo "  make test       Build + unit-test the M365 connector plugin (Node)"
 	@echo "  make typecheck  Type-check the M365 connector plugin (tsc --noEmit)"

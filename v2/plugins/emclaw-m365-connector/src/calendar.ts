@@ -158,7 +158,7 @@ export function ianaFromGraphTimeZone(value: unknown): string | null {
 
 // Accepts a user-supplied timezone: an IANA id, a Windows name, or a UTC/GMT offset like
 // "GMT+8" / "UTC+8" / "+8" / "+08:00". Returns a usable IANA id (fixed-offset Etc/GMT zone for
-// numeric offsets — note the IANA sign convention is inverted) or null.
+// numeric offsets (the IANA sign convention is inverted) or null.
 export function userTimeZoneToIana(value: unknown): string | null {
   const raw = typeof value === "string" ? value.trim() : "";
   if (!raw) return null;
@@ -1024,7 +1024,7 @@ export async function graphMailboxTimeZoneFetch(accessToken: string): Promise<Gr
 }
 
 // Resolve the caller's own timezone from Outlook (mailboxSettings.timeZone) so date windows follow
-// the user's time, not the server's. No content is read — only the timezone string. Falls back gracefully.
+// the user's time, not the server's. Only the timezone string is read. Falls back gracefully.
 export async function resolveUserTimeZone(userRef: string): Promise<{ timezone: string | null; source: string; status: number | null }> {
   try {
     const load = loadTokenWrapperForGraph(userRef);

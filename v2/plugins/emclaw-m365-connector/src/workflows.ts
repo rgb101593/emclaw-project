@@ -258,7 +258,7 @@ export function emailAlertQuotaMessage(ownerUserRef: string, countAfterCreate: n
   const remaining = Math.max(0, limit - countAfterCreate);
   const base = adminTone
     ? `Created email alert for ${rosterDisplayLabel(ownerUserRef)}. Active email alerts: ${countAfterCreate} of ${limit}.`
-    : `Done — your email alert is set up. You can have up to ${limit} active email alerts at a time. You now have ${countAfterCreate} of ${limit} active.`;
+    : `Done. Your email alert is set up. You can have up to ${limit} active email alerts at a time. You now have ${countAfterCreate} of ${limit} active.`;
   const tail = remaining > 0
     ? ` You have ${remaining} remaining.`
     : " That's your maximum. Pause or terminate one if you want to add another.";
@@ -321,7 +321,7 @@ export function applyEmailAlertCadenceFloor(spec: WorkflowSpec, args: Record<str
     requested_seconds: requested,
     effective_seconds: effective,
     clamped,
-    message: clamped ? "I set this to check every 3 minutes — that's the fastest cadence allowed to keep the system responsive for everyone." : "",
+    message: clamped ? "I set this to check every 3 minutes. That's the fastest cadence allowed to keep the system responsive for everyone." : "",
   };
 }
 
